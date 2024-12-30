@@ -23,7 +23,7 @@ export default function Menu() {
       </div>
       
       {/* Render Menucard for each item */}
-      <div className="grid grid-cols-2 gap-8 mt-8 px-4 ">
+      <div className="grid  sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-12 sm:gap-10 md:gap-8 mt-8 px-2 sm:px-4 ">
         {Menuchunks.map((item) => (
           <Menucard  
             key={item.id}

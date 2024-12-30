@@ -17,7 +17,7 @@ export default async function Page({
   const result = getmenuItemsByCategory(slug); // Filter menu items by category
 
   return (
-    <div className="grid grid-cols-2 gap-10 mt-20">
+    <div className="grid grid-cols-1 sm:grid-cols-1  md:grid-cols-1 lg:grid-cols-2 gap-10 mt-20 px-4 ">
       {result.map((item) => (
         <Menucard
           key={item.id}
