@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/legacy/image';
+ import Link from 'next/link';
 
 // Define the interface for props
 interface MenucardProps {
@@ -8,10 +9,12 @@ interface MenucardProps {
   price: string;
   category: string;
   imageUrl: string;
+  id:number;
 }
 
-const Menucard: React.FC<MenucardProps> = ({ name, description, price, imageUrl }) => {
+const Menucard: React.FC<MenucardProps> = ({ name, description, price, imageUrl,id }) => {
   return (
+    <Link href={`/menu/${id}`}>
     <div className="flex items-center space-x-4">
       {/* Image Container */}
       <div
@@ -38,6 +41,7 @@ const Menucard: React.FC<MenucardProps> = ({ name, description, price, imageUrl 
       </div>
       </div>
     </div>
+    </Link>
   );
 };
 

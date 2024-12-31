@@ -26,6 +26,7 @@ export default async function Page({
           price={item.price}
           category={item.category}
           imageUrl={item.imageUrl}
+          id={item.id}
         />
       ))}
     </div>

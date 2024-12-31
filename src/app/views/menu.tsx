@@ -31,7 +31,8 @@ export default function Menu() {
             description={item.description}
             price={item.price}
             category={item.category}
-            imageUrl={item.imageUrl}  // Pass imageUrl prop as well
+            imageUrl={item.imageUrl} 
+            id={item.id} // Pass imageUrl prop as well
           />
         ))}
       </div>
