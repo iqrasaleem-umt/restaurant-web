@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 export default function Gallery() {
   return (
-    < div id="gallery">
+    < div id="gallery" className="scroll-mt-20">
 
     
     <div className="mt-10 ">

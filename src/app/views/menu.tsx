@@ -10,7 +10,7 @@ export default function Menu() {
     <div>
       <div
         id="menu"
-        className="flex flex-col items-center mt-10 font-cinzel transition-transform duration-300 ease-linear"
+        className="flex flex-col items-center mt-10 font-cinzel transition-transform duration-300 ease-linear scroll-mt-20"
       >
         <h1 className="text-orange-400 text-xl">Menu</h1>
         <h1 className="text-black text-2xl mt-7">Checkout our tasty menu</h1>
