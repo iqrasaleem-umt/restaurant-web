@@ -20,25 +20,32 @@ export default async function Page({
   }
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-10 mt-20 px-4">
+    <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-10 mt-20 px-8">
       {result.map((item) => (
-        <div key={item.id} className="flex justify-between">
-          <div>
+        <div
+          key={item.id}
+          className="flex bg-white shadow-lg rounded-lg overflow-hidden transition-transform transform hover:scale-105"
+        >
+          {/* Image Section */}
+          <div className="w-1/3">
             <Image
               src={item.imageUrl}
               alt={item.name}
               width={150}
               height={150}
               style={{ objectFit: "cover" }}
+              className="h-full w-full object-cover"
             />
           </div>
-          <div>
-            <h2>{item.name}</h2>
-            <p>{item.description}</p>
-            <p>{item.price}</p>
+  
+          {/* Text Section */}
+          <div className="w-2/3 p-4">
+            <h2 className="text-xl font-semibold text-gray-800 mb-2">{item.name}</h2>
+            <p className="text-gray-600 text-sm mb-4">{item.description}</p>
+            <p className="text-lg font-bold text-green-600">{item.price}</p>
           </div>
         </div>
       ))}
     </div>
   );
-}
+};  

@@ -8,13 +8,13 @@ export default function Contact() {
         <p className="font-serif text-xl text-black mt-5">Get In Touch</p>
       </div>
       <div className="flex flex-wrap justify-center gap-4 mt-10">
-        <p className="bg-orange-300 border border-black p-4 w-full sm:w-1/2 lg:w-1/3 text-center">
+        <p className="bg-black text-white border border-orange-300 p-4 w-full sm:w-1/2 lg:w-1/3 text-center">
           Location: A108 Adam Street, New York, NY 535022
         </p>
-        <p className="bg-orange-300 border border-black p-4 w-full sm:w-1/2 lg:w-1/3 text-center">
+        <p className="bg-black text-white border border-orange-300 p-4 w-full sm:w-1/2 lg:w-1/3 text-center">
           Email: info@example.com
         </p>
-        <p className="bg-orange-300 border border-black p-4 w-full sm:w-1/2 lg:w-1/3 text-center">
+        <p className="bg-black text-white border border-orange-300 p-4 w-full sm:w-1/2 lg:w-1/3 text-center">
           Phone no: 02356778899
         </p>
       </div>
